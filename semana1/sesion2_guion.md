@@ -1,8 +1,9 @@
 # Session 2 · Martes 13 de octubre
 # Decisions and Errors
 
-**Cómo usar este guion:** lo que sigue a **DI** se lee tal cual. Lo que sigue a
-**HAZ** lo haces tú en pantalla.
+**Cómo usar este guion:** lo que sigue a **DI** se lee tal cual, con calma y
+sonriendo. Lo que sigue a **HAZ** lo haces tú en pantalla. *(pausa)* es para
+respirar y mirar al grupo.
 
 **Al terminar, el participante puede:** leer y escribir un `if / else`, combinar
 dos condiciones, y leer un mensaje de error identificando dónde, qué tipo y qué
@@ -10,7 +11,7 @@ pasó.
 
 | Min | Bloque |
 |---|---|
-| 0–5 | Repaso |
+| 0–5 | Bienvenida y repaso |
 | 5–16 | Condiciones: `if`, `else`, `elif` |
 | 16–23 | El error a propósito |
 | 23–37 | Práctica: test checker |
@@ -28,25 +29,36 @@ pasó.
 
 ---
 
-## 1. Repaso (0–5)
+## 1. Bienvenida y repaso (0–5)
 
 **DI:**
-> Antes de empezar, tres preguntas rápidas del jueves. Respondan ustedes.
+> ¡Buenas! ¿Cómo están? Qué gusto verlos otra vez. Les confieso que la clase del
+> jueves me dejó de muy buen humor; hicieron un trabajo buenísimo.
+>
+> Antes de arrancar, calentemos con tres preguntas rápidas. No son examen, son
+> para despertar la memoria. Respondan en voz alta, sin pena.
 >
 > ¿Qué es una variable?
->
-> ¿Qué diferencia hay entre el 5 y el "5" entre comillas?
->
-> ¿Qué responde siempre una comparación?
 
-**Respuestas que buscas:** un nombre que guarda un valor · uno es número y el otro
-texto · True o False.
+**HAZ:** espera respuestas. Buscas: un nombre que guarda un valor.
 
 **DI:**
-> Esa última es la clave de hoy. Hasta ahora el programa hacía siempre lo mismo.
-> Hoy va a decidir qué hacer según la respuesta sea True o False.
+> ¡Eso! Una caja con etiqueta. Segunda: ¿qué diferencia hay entre el 5 y el 5
+> entre comillas?
 
-**HAZ:** todos abren `sesion2_ejercicios.py` y lo ejecutan.
+**HAZ:** espera. Buscas: uno es número y el otro texto.
+
+**DI:**
+> Perfecto. Y la última: ¿qué responde siempre una comparación?
+
+**HAZ:** espera. Buscas: True o False.
+
+**DI:**
+> Exacto, True o False. Y guárdense esa respuesta, porque es la llave de todo lo
+> de hoy. Hasta ahora nuestros programas hacían siempre lo mismo, de arriba hacia
+> abajo, sin pensar. Hoy les vamos a enseñar a decidir.
+>
+> Abran el archivo sesion2 ejercicios y ejecútenlo, igual que la vez pasada.
 
 ---
 
@@ -64,23 +76,29 @@ else:
 ```
 
 **DI:**
-> Lean conmigo. fps vale 28. Luego: if, que significa "si". Si fps es mayor o
-> igual a 30, muestra PASS. Else, que significa "si no", muestra FAIL.
+> Lean conmigo, que esto se lee casi como una frase normal. fps vale 28. Luego
+> viene la palabra if, que significa "si". Si fps es mayor o igual a 30, muestra
+> PASS. Y else, que significa "si no", muestra FAIL.
 >
-> Como 28 no llega a 30, salió FAIL.
+> Como 28 no llega a 30, salió FAIL. El programa acaba de tomar su primera
+> decisión.
 >
-> Dos detalles que Python exige. Uno: la línea del if termina con dos puntos.
-> Dos: las líneas de abajo empiezan con cuatro espacios. Esos espacios le dicen a
-> Python qué instrucciones pertenecen al if. No son decoración.
+> Ahora, Python es un poquito quisquilloso con dos cosas, y es mejor que se las
+> presente yo antes de que se las encuentren solos. *(pausa)*
 >
-> Cambien fps a 60, guarden y ejecuten.
+> Una: la línea del if termina con dos puntos. Siempre.
+>
+> Y dos: las líneas de abajo empiezan con cuatro espacios. Esos espacios no son
+> decoración; le dicen a Python "esto de aquí pertenece al if".
+>
+> Cambien fps a 60, guarden y ejecuten, a ver qué pasa.
 
-**HAZ:** demuestra la sangría. Borra los 4 espacios de `print("PASS")` y ejecuta.
-Sale `IndentationError`.
+**HAZ:** cuando lo vean, demuestra la sangría. Borra los 4 espacios de
+`print("PASS")` y ejecuta. Sale `IndentationError`.
 
 **DI:**
-> Esto pasa si faltan los espacios. Python nos dice la línea exacta. Lo arreglo y
-> seguimos.
+> Miren lo que pasa si me como los espacios. Python se queja, pero se queja con
+> educación: me dice exactamente en qué línea. Lo arreglo y seguimos como si nada.
 
 ### Ejercicio 2
 
@@ -96,29 +114,36 @@ else:
 ```
 
 **DI:**
-> Cuando hay más de dos caminos se usa elif, que es "si no, prueba esto otro".
-> Python revisa de arriba hacia abajo y se queda con el primero que sea verdad.
+> ¿Y si hay más de dos caminos? Para eso existe elif, que es una mezcla de else
+> e if: "si no, prueba con esto otro". Python va preguntando de arriba hacia
+> abajo y se queda con la primera respuesta que sea verdad.
 >
-> Con 3 crashes: ¿es igual a 0? No. ¿Es menor o igual a 2? No. Entonces cae en el
-> else: Critical.
+> Con 3 crashes: ¿es igual a cero? No. ¿Es menor o igual a 2? Tampoco. Entonces
+> cae en el else: Critical.
 >
-> Prueben con 0. Y luego con 2. Antes de ejecutar el 2, díganle a su pareja qué
-> va a salir.
+> Prueben con 0. Y después con 2. Pero antes de ejecutar el 2, apuesten con su
+> pareja qué va a salir.
 
 **HAZ:** espera. Con 2 sale `Minor`.
 
 **DI:**
-> Salió Minor porque dice menor o igual. Si dijera solo menor, el 2 caería en
-> Critical. Los valores límite son donde más se esconden los bugs, y ustedes en
-> QA ya lo saben: por eso se prueban los bordes.
+> ¿Quién ganó la apuesta? Salió Minor, porque dice menor o igual. Si dijera
+> solamente menor, el 2 se nos iría a Critical. Un símbolo de diferencia.
+>
+> Y esto ustedes lo conocen mejor que nadie: los bugs viven en los bordes. Por
+> eso en QA se prueban los valores límite. Ahora ya saben cómo se ven esos bordes
+> desde adentro.
 
 ---
 
 ## 3. El error a propósito (16–23)
 
 **DI:**
-> Ahora vamos a romper el programa a propósito. Vayan al ejercicio 3, quiten el
-> símbolo numeral del inicio de la línea que empieza con print, guarden y ejecuten.
+> Bueno, llegó el momento que les prometí. Vamos a romper el programa. A
+> propósito, y con alegría. *(pausa)*
+>
+> Vayan al ejercicio 3. Hay una línea que empieza con numeral y luego print.
+> Quítenle el numeral, guarden y ejecuten. Sin miedo.
 
 **HAZ:** hazlo también. Sale:
 
@@ -130,26 +155,31 @@ TypeError: can only concatenate str (not "int") to str
 ```
 
 **DI:**
-> Que nadie lo arregle todavía. Vamos a leerlo, porque este mensaje tiene tres
-> partes y siempre son las mismas.
+> ¡Ahí está! Qué belleza. Que nadie lo arregle todavía, déjenlo en pantalla.
 >
-> Primera parte, dónde: dice el archivo y el número de línea.
+> Sé que la primera reacción es de susto: mucho texto, palabras raras, todo en
+> inglés. Yo también sentía eso. Pero les voy a mostrar que este mensaje tiene
+> tres partes, y que son siempre las mismas tres. Cuando uno aprende a verlas,
+> el miedo se va. *(pausa)*
 >
-> Segunda parte, la línea exacta que falló: Python nos la copia.
+> Primera parte, el dónde: nos dice el archivo y el número de línea.
 >
-> Tercera parte, la última línea, la más importante: el tipo de error y el
-> detalle. TypeError: un problema de tipos. Y explica: no puede unir un texto con
-> un número entero.
+> Segunda parte, la línea exacta que falló. Python nos la copia, por si acaso.
 >
-> ¿Se acuerdan del jueves, que el 5 y el "5" eran cosas distintas? Aquí está la
-> consecuencia. crashes es un número, y lo estamos pegando a un texto.
+> Y tercera parte, la última línea, que es la más importante: el tipo de error y
+> la explicación. TypeError: un problema de tipos. Y nos dice que no puede unir
+> un texto con un número entero.
 >
-> Quiero que se lleven esto: el error no es el enemigo. Dice dónde, dice qué y
-> casi siempre dice por qué. Quien lee esto con calma resuelve; quien se asusta y
-> cierra la ventana, no. Leer mensajes como este es una parte grande del trabajo
-> técnico.
+> ¿Se acuerdan del 5 y el 5 entre comillas? Aquí está la consecuencia en vivo.
+> crashes es un número, y lo estamos pegando a un texto. El computador, que es
+> literal, nos dice: eso no lo sé hacer.
 >
-> Vuelvan a poner el símbolo numeral al inicio de esa línea y guarden.
+> Quiero que se lleven esto para siempre: el error no es el enemigo. El error es
+> el compañero más honesto que van a tener. Les dice dónde, les dice qué y casi
+> siempre les dice por qué. Quien lo lee con calma, resuelve. Y les cuento que
+> leer mensajes como este es una parte enorme de mi trabajo de todos los días.
+>
+> Ahora sí: vuelvan a ponerle el numeral a esa línea y guarden. Ya nos sirvió.
 
 **Nota para ti:** el número de línea puede variar si añadieron o quitaron líneas.
 El arreglo, por si preguntan, es `print(f"Crashes: {crashes}")`.
@@ -159,10 +189,15 @@ El arreglo, por si preguntan, es `print(f"Crashes: {crashes}")`.
 ## 4. Práctica: test checker (23–37)
 
 **DI:**
-> Ahora ustedes. Ejercicio 4: tienen un valor esperado y un valor real. Escriban
-> un if else que muestre PASS si son iguales y FAIL si no. Recuerden: dos puntos
-> al final del if, cuatro espacios en las líneas de abajo, y doble igual para
-> comparar. Cambien de persona en el teclado.
+> Ahora les toca a ustedes, y este ejercicio me gusta mucho porque van a
+> construir algo que se parece a una herramienta de verdad.
+>
+> Ejercicio 4: tienen un valor esperado y un valor real. Escriban un if else que
+> muestre PASS si son iguales y FAIL si no lo son.
+>
+> Tres recordatorios cariñosos: dos puntos al final del if, cuatro espacios en
+> las líneas de abajo, y doble igual para comparar. Cambien de persona en el
+> teclado, y yo voy pasando.
 
 **Respuesta:**
 
@@ -173,16 +208,19 @@ else:
     print("FAIL")
 ```
 
-**HAZ:** circula. Cuando la mayoría termine:
+**HAZ:** circula. Celebra los aciertos en voz alta. Cuando la mayoría termine:
 
 **DI:**
-> Acaban de escribir la esencia de una prueba automatizada: comparar lo real con
-> lo esperado y dar un veredicto. Las herramientas reales hacen esto miles de
-> veces, con muchas más reglas, pero el corazón es ese if.
+> Paren un segundo y miren lo que tienen en pantalla. *(pausa)* Eso que acaban de
+> escribir es la esencia de una prueba automatizada: comparar lo real con lo
+> esperado y dar un veredicto. Las herramientas con las que trabajamos hacen eso
+> miles de veces, con muchas más reglas. Pero el corazón es ese if que ustedes
+> acaban de escribir. Y lo escribieron en su segunda clase.
 >
-> Ejercicio 5: dos condiciones a la vez. La palabra and exige que se cumplan las
-> dos. Si fps es mayor o igual a 30 y además crashes es igual a 0, muestren
-> Build OK. Si no, Build needs review.
+> Vamos con el ejercicio 5, que le sube un poquito. Ahora son dos condiciones a
+> la vez. La palabra and significa "y": exige que se cumplan las dos. Si fps es
+> mayor o igual a 30 y además crashes es igual a 0, muestren Build OK. Si no,
+> Build needs review.
 
 **Respuesta:**
 
@@ -194,8 +232,8 @@ else:
 ```
 
 **DI:**
-> Ahora cambien los valores de fps y crashes, arriba en el archivo, hasta que
-> salga Build OK.
+> Y ahora el reto: cambien los valores de fps y de crashes, arriba en el archivo,
+> hasta lograr que salga Build OK.
 
 **Errores típicos:**
 
@@ -215,55 +253,68 @@ Quien termine antes hace el reto: el mensaje de FAIL con los dos valores.
 **HAZ:** en VS Code, abre `sesion2_demo_assert.py`.
 
 **DI:**
-> Antes de ir a Frostbite, una última cosa en Python. Miren esta línea.
+> Antes de irnos a Frostbite quiero mostrarles una última línea de Python. Es
+> cortita, pero es de las más importantes que van a ver en este programa.
 
 ```python
 assert player_speed >= 0, "player_speed must not be negative"
 ```
 
 **DI:**
-> assert significa "afirmo". El programador está diciendo: esto siempre tiene que
-> ser verdad. La velocidad nunca debería ser negativa. Si alguna vez lo es,
-> detente y avisa.
+> assert significa "afirmo". Es el programador diciendo: esto tiene que ser
+> verdad siempre. La velocidad nunca debería ser negativa. Y si algún día lo es,
+> detente y avísame.
 >
-> Arriba le puse menos uno a propósito. Lo ejecuto.
+> Arriba le puse menos uno, a propósito. Miren lo que pasa.
 
 **HAZ:** ejecuta `python sesion2_demo_assert.py`. Sale `AssertionError`.
 
 **DI:**
-> AssertionError, con el mensaje que escribió el programador. Es un if que, en
-> lugar de mostrar FAIL, se detiene y grita.
+> AssertionError, y al lado el mensaje que dejó escrito el programador. Es como
+> un if, pero con carácter: en lugar de mostrar FAIL, se detiene y grita.
 
 **HAZ:** cambia a FrostEd, a la ventana de mensajes del engine.
 
 **DI:**
-> Aquí es donde el engine nos habla. Lo que para ustedes fue print, aquí son
-> estos mensajes. Hay informativos, hay advertencias y hay errores.
+> Y ahora sí, vengan conmigo a Frostbite. Aquí, en esta ventana, es donde el
+> engine nos habla. Lo que para ustedes fue print, aquí son estos mensajes. Hay
+> informativos, hay advertencias y hay errores.
 
 **HAZ:** si preparaste un ejemplo de warning o de assertion, muéstralo ahora.
 
 **DI:**
-> Cuando en una prueba aparece un assertion, es exactamente lo que acaban de ver:
-> alguien escribió en el código "esto siempre debe ser verdad", y dejó de serlo.
-> No es ruido. Es el engine diciendo que ocurrió algo que no debía ocurrir.
+> ¿Se acuerdan de la última pregunta del diagnóstico, la del assertion? Ya la
+> pueden responder. Cuando aparece uno durante una prueba, es exactamente lo que
+> acabamos de ver: alguien escribió "esto siempre debe ser verdad", y dejó de
+> serlo. No es ruido. Es el engine levantando la mano para avisarnos.
 >
-> Y aquí viene la parte honesta. Ustedes ya pueden entender qué es un assertion.
-> Pero ver un assertion no es saber qué lo causó. Para eso hay que saber qué
-> sistema lo lanzó, qué valor esperaba, qué pasó antes. Eso es interpretar, y
-> toma tiempo y experiencia. Lo que sí pueden hacer desde hoy es reportarlo bien:
-> el mensaje exacto, copiado tal cual, y los pasos que hicieron antes.
+> Y ahora la parte sincera, como siempre. Ustedes ya entienden qué es un
+> assertion, y eso es un montón. Pero ver uno no es lo mismo que saber qué lo
+> causó. Para eso hay que saber qué sistema lo lanzó, qué valor esperaba y qué
+> pasó antes. Eso se llama interpretar, y se gana con tiempo y experiencia.
 >
-> Resumen de estas dos sesiones: variables, tipos, operadores, condiciones, y leyeron su
-> primer error sin asustarse. El jueves vemos cómo hacer que el programa repita
-> una revisión cien veces sin escribirla cien veces.
+> Lo que sí pueden hacer desde hoy, y marca una diferencia enorme, es reportarlo
+> bien: el mensaje exacto, copiado tal cual, y los pasos que hicieron antes. Un
+> reporte así le ahorra horas a quien lo recibe.
 >
-> Tarea opcional, cinco minutos: en el ejercicio 2, añadan un nivel más. Por
+> Miren todo lo que llevan en dos clases: variables, tipos, operadores,
+> condiciones, y leyeron su primer error sin salir corriendo. Siento mucho orgullo
+> por este grupo, se los digo de corazón.
+>
+> El jueves vamos a ver cómo hacer que el programa repita una revisión cien veces
+> sin tener que escribirla cien veces. Ahí es donde esto se empieza a sentir como
+> un superpoder.
+>
+> Tarea opcional de cinco minutos: en el ejercicio 2, agreguen un nivel más. Por
 > ejemplo, que con más de 10 crashes diga Blocker.
+>
+> Gracias por la energía de hoy. Nos vemos el jueves.
 
 ---
 
 ## Si vas mal de tiempo
 
+Los textos son más largos que en la versión anterior, así que vigila el reloj.
 Recorta en este orden:
 
 1. El ejercicio 5 (`and`) pasa a ser la tarea.
