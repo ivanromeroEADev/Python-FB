@@ -33,7 +33,7 @@ son para respirar y mirar al grupo.
 >
 > Sé que todos tenemos trabajo, entregas y otras cosas pendientes, así que agradezco que hayan sacado este espacio para estar acá.
 >
-> Les cuento también que a mí me gusta mucho enseñar. Me gusta especialmente cuando podemos tomar algo que al principio parece >complicado, dividirlo en partes pequeñas y llegar al punto en que empieza a tener sentido. Así que la idea es que durante estas >sesiones podamos hacer justamente eso.
+> Les cuento también que a mí me gusta mucho enseñar. Me gusta especialmente cuando podemos tomar algo que al principio parece complicado, dividirlo en partes pequeñas y llegar al punto en que empieza a tener sentido. Así que la idea es que durante estas >sesiones podamos hacer justamente eso.
 >
 > Este programa se llama Python QV Foundations. Nos vamos a encontrar los martes y los jueves durante 45 minutos, hasta el 29 de octubre.
 >
