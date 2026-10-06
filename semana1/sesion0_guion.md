@@ -29,39 +29,39 @@ son para respirar y mirar al grupo.
 ## 1. Bienvenida (0–6)
 
 **DI:**
-> ¡Hola a todos! Bienvenidos. Antes de cualquier cosa, gracias por estar aquí.
-> Sé que todos tienen trabajo, entregas y mil cosas encima, así que el hecho de
-> que hayan sacado este rato ya me dice mucho de ustedes.
+> ¡Hola a todos! Bienvenidos. Antes que nada, gracias por estar aquí.
 >
-> Les cuento algo: a mí enseñar me encanta. De verdad. Hay pocas cosas que
-> disfrute tanto como ver la cara de alguien cuando algo que parecía imposible
-> de repente tiene sentido. Así que les aviso desde ya que yo vengo a pasarla
-> bien, y espero que ustedes también.
+> Sé que todos tenemos trabajo, entregas y otras cosas pendientes, así que agradezco que hayan sacado este espacio para estar acá.
 >
-> Este programa se llama Python QV Foundations. Nos vamos a ver los martes y los
-> jueves, 45 minutos, hasta el 29 de octubre. *(pausa)*
+> Les cuento también que a mí me gusta mucho enseñar. Me gusta especialmente cuando podemos tomar algo que al principio parece >complicado, dividirlo en partes pequeñas y llegar al punto en que empieza a tener sentido. Así que la idea es que durante estas >sesiones podamos hacer justamente eso.
 >
-> Quiero contarles con honestidad qué es esto y qué no es, porque prefiero que
-> empecemos con las expectativas claras. En un mes nadie se convierte en
-> Technical Tester de Frostbite. Ese camino es largo; a mí me tomó años, muchos
-> errores y bastantes dolores de cabeza. Lo que sí podemos hacer en este mes, y
-> lo vamos a hacer bien, es construir la base: aprender a programar desde cero,
-> a pensar con lógica y a leer lo que una máquina nos está diciendo. Con esa base
-> todo lo demás se vuelve posible. Sin ella, nada se sostiene.
+> Este programa se llama Python QV Foundations. Nos vamos a encontrar los martes y los jueves durante 45 minutos, hasta el 29 de octubre.
 >
-> La dinámica va a ser muy sencilla. Ustedes van a escribir Python en Visual
-> Studio Code, con sus propias manos. Y yo, al final de cada clase, les voy a
-> mostrar esa misma idea viviendo dentro de Frostbite. El mismo concepto en dos
-> mundos. Van a ver que lo que escriben aquí no es un ejercicio de juguete: es
-> exactamente de lo que está hecho un engine.
+> Quiero empezar dejando algo claro sobre qué vamos a hacer durante este tiempo.
 >
-> Y una cosa más, que para mí es la más importante: aquí nadie tiene que saber
-> nada. No hay preguntas tontas, no hay ritmos lentos, y equivocarse no solo
-> está permitido, es parte del plan. Yo me sigo equivocando todos los días, y es
-> como más he aprendido.
+> En unas pocas semanas no vamos a convertirnos en Technical Testers de Frostbite, y tampoco es ese el objetivo del programa. El trabajo con herramientas y sistemas como Frostbite requiere tiempo y experiencia.
 >
-> Hoy todavía no vamos a programar. Hoy quiero conocerlos un poco mejor.
-
+> Lo que sí podemos hacer es construir una buena base. Vamos a empezar con programación desde conceptos muy básicos, vamos a trabajar un poco de lógica, debugging y, sobre todo, vamos a aprender a entender qué está haciendo un sistema y cómo podemos investigar cuando algo no se comporta como esperamos.
+>
+> La dinámica va a ser bastante práctica. Ustedes van a trabajar directamente en Visual Studio Code, escribiendo y ejecutando pequeños ejercicios en Python.
+>
+> Y yo voy a ir conectando esos conceptos con ejemplos dentro de Frostbite, para que podamos ver cómo una idea que estamos trabajando en un ejercicio sencillo también aparece, de formas mucho más complejas, dentro de un engine.
+>
+> No quiero que simplemente memoricen código. Quiero que entiendan qué está pasando.
+>
+> Y algo importante: no espero que nadie llegue sabiendo esto. Si algo no queda claro, pregúntenlo. Si algo falla, lo revisamos. Y si alguien necesita que volvamos a explicar algo desde otra perspectiva, lo hacemos.
+>
+> No todos vamos a avanzar exactamente al mismo ritmo, y está bien. La idea es que vayamos construyendo esto juntos.
+>
+> También quiero que aprovechemos bastante el tiempo que tenemos. Las sesiones van a ser cortas, así que vamos a intentar que cada concepto tenga una parte práctica y que podamos verlo funcionando, en lugar de quedarnos solamente con la teoría.
+>
+> Y si en algún momento sienten que algo va demasiado rápido, díganmelo. Prefiero detenerme dos minutos y asegurarme de que el concepto quedó claro antes que simplemente avanzar por cumplir con el contenido.
+>
+> La idea es que salgamos de cada sesión entendiendo un poco más de lo que entendíamos cuando entramos.
+>
+> Hoy todavía no vamos a programar. Primero quiero conocer un poco el punto de partida de cada uno y entender qué experiencia tienen con programación, herramientas técnicas y debugging.
+>
+> Así que vamos a comenzar con un pequeño diagnóstico.
 ---
 
 ## 2. Entrar a Pear Deck (6–9)
