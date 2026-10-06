@@ -1,42 +1,51 @@
-# SESSION 1 - Programming Foundations: Thinking Like a Programmer
+# SESSION 1 - Thinking Like a Programmer: Follow the Value
 #
 # Las lineas que empiezan con # son comentarios. Python las ignora.
 #
 # Para ejecutar este archivo, en la terminal:
 #     python sesion1_ejercicios.py
+#
+# REGLA DE HOY: antes de ejecutar, predice. Escribe tu prediccion donde
+# veas ____ y solo despues quita el # del print para comprobar.
 
-# --- Ejercicio 1: print --------------------------------------------
-# print() muestra algo en pantalla.
 print("Hello, QA team")
 
-# Cambia el texto por tu nombre, guarda (Ctrl+S) y ejecuta de nuevo.
 
+# --- Ejercicio 1: variables y tipos --------------------------------
+# Una variable es un nombre que guarda un valor. Cada valor tiene un tipo.
+player_name = "Alex"      # str:   texto, siempre entre comillas
+player_speed = 5          # int:   numero entero
+player_health = 87.5      # float: numero con decimales
+is_alive = True           # bool:  True o False
 
-# --- Ejercicio 2: variables ----------------------------------------
-# Una variable es un nombre que guarda un valor.
-player_name = "Alex"
-player_speed = 5
-player_health = 87.5
-is_alive = True
-
-print(player_name)
-print(player_speed)
-print(player_health)
-print(is_alive)
-
-# Cambia player_speed a 9 y ejecuta de nuevo.
-
-
-# --- Ejercicio 3: tipos de datos -----------------------------------
-# type() dice de que tipo es el valor guardado.
 print(type(player_name))
 print(type(player_speed))
 print(type(player_health))
 print(type(is_alive))
 
 
-# --- Ejercicio 4: operadores para calcular -------------------------
-#   +  sumar     -  restar     *  multiplicar     /  dividir
+# --- Ejercicio 2: sigue el valor -----------------------------------
+# El signo = no significa "es igual a". Significa "guarda esto aqui".
+
+# 2a
+score = 10
+score = score + 5
+score = score * 2
+# Prediccion: score vale ____
+# print(score)
+
+# 2b
+a = 3
+b = a
+a = a + 4
+b = b * 2
+# Prediccion: a vale ____   b vale ____
+# print(a, b)
+
+
+# --- Ejercicio 3: operadores y comparaciones -----------------------
+#   +  -  *  /            calculan
+#   ==  !=  >  <  >=  <=  comparan, y siempre responden True o False
 tests_total = 40
 tests_passed = 34
 
@@ -46,31 +55,59 @@ pass_rate = tests_passed / tests_total * 100
 print(tests_failed)
 print(pass_rate)
 
-# Cambia tests_passed a 38. Antes de ejecutar: cuanto va a dar tests_failed?
+# Predice el resultado de cada linea ANTES de quitarle el #:
+# print(pass_rate > 85)        # Prediccion: ____
+# print(pass_rate >= 85)       # Prediccion: ____
+# print(5 + 5)                 # Prediccion: ____
+# print("5" + "5")             # Prediccion: ____
+# print("5" == 5)              # Prediccion: ____
 
 
-# --- Ejercicio 5: operadores para comparar -------------------------
-#   ==  igual     !=  distinto     >  mayor     <  menor
-#   >=  mayor o igual     <=  menor o igual
-# Una comparacion siempre responde True o False.
-expected_speed = 5
+# --- Ejercicio 4: decisiones ---------------------------------------
+# OJO: la linea del if termina con dos puntos, y las lineas de abajo
+# empiezan con 4 espacios.
+crashes = 3
 
-print(player_speed == expected_speed)
-print(pass_rate >= 90)
-print(player_health > 100)
+if crashes == 0:
+    print("No issues")
+elif crashes <= 2:
+    print("Minor")
+else:
+    print("Critical")
 
-
-# --- Ejercicio 6: predice el resultado -----------------------------
-# Sin ejecutar: que valor tiene score al final? Diselo a tu pareja.
-# Despues quita el # de la ultima linea y comprueba.
-score = 10
-score = score + 5
-score = score * 2
-# print(score)
+# Antes de cambiar nada, predice:
+#   con crashes = 0 sale ____
+#   con crashes = 2 sale ____
+# Ahora cambia el valor de crashes y comprueba las dos.
 
 
-# --- Ejercicio 7: ahora tu -----------------------------------------
-# Crea dos variables: bugs_found con el valor 12 y bugs_fixed con el valor 7.
-# Crea una tercera, bugs_open, que sea la resta de las dos.
-# Muestra bugs_open con print().
+# --- Ejercicio 5: encuentra el bug ---------------------------------
+# La regla del equipo dice: "La prueba pasa si el juego corre a 30 fps o mas."
+# Este codigo no da ningun error... pero el resultado esta mal.
+# Encuentra el bug y arreglalo.
+fps = 30
 
+if fps > 30:
+    print("PASS")
+else:
+    print("FAIL")
+
+
+# --- Ejercicio 6: escribelo tu, desde cero -------------------------
+# Tienes un valor esperado y un valor real.
+expected = 5
+actual = 7
+
+# Escribe un if / else:
+#   si actual es igual a expected, muestra  PASS
+#   si no, muestra  FAIL
+
+
+
+# --- Reto (si te sobra tiempo) -------------------------------------
+# a) Haz que el FAIL diga los dos valores:  FAIL: expected 5, got 7
+#    Pista: print(f"FAIL: expected {expected}, got {actual}")
+#
+# b) Escribe otro if / else: si fps es 30 o mas  Y  crashes es 0,
+#    muestra  Build OK ; si no, muestra  Build needs review
+#    Pista: la palabra  and  exige que se cumplan las dos condiciones.

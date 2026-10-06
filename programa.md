@@ -106,15 +106,20 @@ los ejercicios es inventado: no se usa código, datos ni logs reales del proyect
 | # | Fecha | Sesión | Python | Demostración en Frostbite |
 |---|---|---|---|---|
 | 0 | Mar 6 oct | Assessment | Diagnóstico en vivo y revisión | Ninguna |
-| 1 | Jue 8 oct | Thinking Like a Programmer | Variables, tipos, operadores | Una propiedad con nombre, tipo y valor |
-| 2 | Mar 13 oct | Decisions and Errors | Condiciones, primer error | Mensajes del engine y un assertion |
-| 3 | Jue 15 oct | Repetition | Loops | Muchos objetos, la misma revisión |
-| 4 | Mar 20 oct | Reusable Logic | Funciones | Una herramienta como función: entrada y salida |
-| 5 | Jue 22 oct | Structured Data | Listas y diccionarios | Un objeto y sus propiedades |
-| 6 | Mar 27 oct | Debugging and Logs | Tracebacks, `assert`, causa raíz y síntoma | Un error y un log del engine, guiados |
+| 1 | Jue 8 oct | Follow the Value | Variables, tipos, operadores, condiciones y valores límite | Una propiedad con nombre, tipo y valor |
+| 2 | Mar 13 oct | Repetition | Loops y listas | Muchos objetos, la misma revisión |
+| 3 | Jue 15 oct | Reusable Logic | Funciones y diccionarios | Un objeto y sus propiedades |
+| 4 | Mar 20 oct | Debugging | Tracebacks, `assert` y bugs silenciosos | Mensajes del engine y un assertion |
+| 5 | Jue 22 oct | Reading Logs | Archivos y logs: causa raíz y síntoma | Log de un proceso fallido, guiado |
+| 6 | Mar 27 oct | Mini-project | Validador de resultados de pruebas | Una herramienta real como referencia |
 | 7 | Jue 29 oct | The Full Picture | Repaso y diagnóstico final | Recorrido por el workflow completo |
 
-El material de las sesiones 0, 1 y 2 está en la carpeta `semana1`.
+El calendario se ajustó tras el diagnóstico del 6 de octubre: el grupo promedió
+75 % y nadie quedó en Level 0, así que lo básico se comprime en la sesión 1 y el
+tiempo se dedica a lo que más falló (seguir valores, valores límite, logs y
+assertions).
+
+El material de las sesiones 0 y 1 está en la carpeta `semana1`.
 
 ## 6. Diagnóstico
 
