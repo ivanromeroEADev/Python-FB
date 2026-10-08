@@ -1,0 +1,8 @@
+fps_main_menu,30,60
+fps_city_level,30,30
+fps_harbor_level,30,28
+fps_boss_fight,30,9
+tricks_detected,5,5
+session_minutes,10,12
+saved_replays,3,0
+combo_points,80,95

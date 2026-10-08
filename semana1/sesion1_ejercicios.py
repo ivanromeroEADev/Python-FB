@@ -102,8 +102,10 @@ actual = 7
 #   si actual es igual a expected, muestra  PASS
 #   si no, muestra  FAIL
 
-
-
+if actual == expected:
+    print("PASS")
+else:
+    print("FAIL")
 # --- Reto (si te sobra tiempo) -------------------------------------
 # a) Haz que el FAIL diga los dos valores:  FAIL: expected 5, got 7
 #    Pista: print(f"FAIL: expected {expected}, got {actual}")

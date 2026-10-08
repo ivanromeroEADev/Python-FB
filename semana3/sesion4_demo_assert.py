@@ -1,4 +1,4 @@
-# SESSION 2 - Demo del instructor: que es un assertion
+# SESSION 4 - Demo del instructor: que es un assertion
 #
 # Un assert es una comprobacion: "esto SIEMPRE debe ser verdad".
 # Si no lo es, el programa se detiene y avisa.

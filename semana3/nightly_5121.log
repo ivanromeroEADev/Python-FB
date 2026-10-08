@@ -1,0 +1,8 @@
+[02:00:01] INFO  Job 5121 started
+[02:00:02] INFO  Syncing workspace
+[02:03:15] WARN  Disk space low on D: (1.2 GB free)
+[02:03:16] INFO  Step 'build_assets' started
+[02:41:50] ERROR Could not write 'levels/harbor_03.cache': not enough space on disk
+[02:41:50] ERROR Step 'build_assets' failed with 1 error
+[02:41:51] INFO  Step 'run_tests' skipped
+[02:41:52] ERROR Job 5121 finished with exit code 1

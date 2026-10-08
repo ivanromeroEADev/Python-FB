@@ -119,7 +119,8 @@ El calendario se ajustó tras el diagnóstico del 6 de octubre: el grupo promedi
 tiempo se dedica a lo que más falló (seguir valores, valores límite, logs y
 assertions).
 
-El material de las sesiones 0 y 1 está en la carpeta `semana1`.
+El material está en cuatro carpetas: `semana1` (sesiones 0 y 1), `semana2`
+(sesiones 2 y 3), `semana3` (sesiones 4 y 5) y `semana4` (sesiones 6 y 7).
 
 ## 6. Diagnóstico
 

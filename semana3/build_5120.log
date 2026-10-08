@@ -1,0 +1,12 @@
+[09:14:02] INFO  Job 5120 started
+[09:14:03] INFO  Syncing workspace
+[09:14:41] WARN  Shader cache is 3 days old, rebuilding
+[09:16:10] INFO  Step 'compile_code' started
+[09:19:55] INFO  Step 'compile_code' finished
+[09:19:56] INFO  Step 'build_assets' started
+[09:21:30] ERROR Texture 'props/crate_02' has no source file
+[09:21:30] ERROR Asset 'props/crate_02' could not be built
+[09:21:31] WARN  Skipping 3 assets that depend on 'props/crate_02'
+[09:24:08] ERROR Step 'build_assets' failed with 1 error
+[09:24:08] INFO  Step 'package' skipped
+[09:24:09] ERROR Job 5120 finished with exit code 1
