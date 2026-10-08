@@ -74,6 +74,11 @@ DEMOSTRACIÓN CONCEPTUAL EN FROSTBITE
 CONEXIÓN CON QA / DEBUGGING
 ```
 
+Las sesiones 2 a 7 pueden apoyarse en una presentación interactiva (Nearpod o
+Pear Deck) que recoge las predicciones de todos antes de ejecutar y cierra cada
+demostración con un minuto de aterrizaje a Skate. Es opcional; ver
+`presentacion.md`.
+
 Los participantes no manipulan Frostbite durante el programa. Todo el contenido de
 los ejercicios es inventado: no se usa código, datos ni logs reales del proyecto.
 

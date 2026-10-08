@@ -40,6 +40,16 @@ el trabajo sin la conversación original.
   `D:/dev/dingo/dev/DingoData/Source/ztest/users/ivromero/Scripts`. FrostEd usa
   IronPython 2: sin f-strings, `print("...")` con un solo argumento, solo ASCII y
   division entera (usar `100.0`). No se hace `p4 add` ni submit sin que Ivan lo pida.
+- **Presentación (opcional):** cada sesión de la 2 a la 7 tiene un
+  `sesionN_presentacion.md` con el contenido y el speech de cada pantalla, para
+  montarla en Nearpod (o Pear Deck). Recoge las predicciones como actividades; los
+  ejercicios siguen en VS Code. En clase se lee ese archivo; el guion queda como
+  respaldo (SI FALLAN, tablas de errores, planes B). Instrucciones en
+  `presentacion.md`. Nada real del proyecto se sube a la herramienta.
+- **Aterrizaje a Skate:** cada presentación tiene una pantalla "En Skate", con
+  un speech de un minuto basado en los dos casos de prueba de las demos
+  (detección de un truco y combo). Son ejemplos ilustrativos que Iván valida
+  antes de cada sesión.
 - **Canal de Slack:** `python-qv-foundations`, con un canvas del programa.
 
 ## Resultados del diagnóstico (6 de octubre)
@@ -130,6 +140,10 @@ valores límite, los logs y los assertions. El plan se ajustó a eso.
    (job 6033, `docks_02`, `load_times`, `rc_02`).
 2. El canvas de Slack tiene el calendario anterior; hay que actualizar la tabla.
 3. Probar los siete scripts en FrostEd antes de cada sesión.
+4. Montar en Nearpod la lección de cada sesión a partir de su
+   `sesionN_presentacion.md` (15 a 20 minutos cada una), si se decide usarla.
+   Antes, confirmar que Nearpod está permitido con cuenta de la empresa.
+5. La sesión 1 no tiene `sesion1_presentacion.md`.
 
 ## Cómo retomar
 
