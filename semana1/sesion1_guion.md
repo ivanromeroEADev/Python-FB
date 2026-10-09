@@ -62,10 +62,13 @@ detectar un error de valor límite.
 **Propósito:** fijar el marco. Qué mostraron los datos, qué haremos y cómo.
 
 **DI:**
-> Buenos días a todos. Gracias por estar aquí.
+> ¡Hola, hola! Bienvenidos de nuevo. Gracias por estar aquí. Hoy sí: vamos a
+> escribir código.
 >
-> Empiezo por el diagnóstico del martes. Lo revisé con cuidado, y me dio dos
-> informaciones útiles.
+> Empiezo por el diagnóstico del martes. Lo revisé con cuidado y me dio dos
+> informaciones útiles. Gracias por haberlo presentado; me sirvió muchísimo.
+> Como les dije, nadie tiene de qué preocuparse: empezamos desde el principio y
+> vamos todos juntos.
 >
 > La primera: en este grupo hay base. Nadie parte de cero, y eso nos permite
 > avanzar más rápido en lo elemental.
@@ -82,8 +85,11 @@ detectar un error de valor límite.
 > cómo razonan. Una respuesta equivocada bien razonada me sirve más que un
 > acierto por intuición.
 >
-> Y si aparece un error en pantalla, lo leemos juntos. Los errores son
-> información. Con el tiempo van a ver que son la información más útil que hay.
+> Si aparece un error en pantalla, no es algo malo ni algo que temer: es una
+> pista y así es como se debe ver. Lo leemos juntos con curiosidad. Los errores son información, y con el
+> tiempo van a ver que es la información más útil que hay.
+>
+> Antes de que termine la sesión, todos habrán logrado que algo les funcione.
 
 **HAZ:** nombra las parejas. Espera a que se acomoden.
 
@@ -118,7 +124,12 @@ detectar un error de valor límite.
 **HAZ:** hazlo tú al mismo ritmo.
 
 **PREGUNTA:**
-> ¿Todos ven la línea Hello, QA team al inicio de la salida?
+> ¿Todos ven la línea Hello, QV team al inicio de la salida?
+
+**DI:**
+> Bueno, gente, podemos comenzar. Vamos a hacerlo todos juntos y sin correr. Si
+> alguien se pierde en un paso, levanta la mano y lo esperamos; aquí nadie se
+> queda atrás.
 
 **SI ALGUIEN NO:** acércate y resuélvelo con esta tabla. El grupo espera.
 
@@ -144,7 +155,7 @@ diagnóstico, que falló casi la mitad.
 ## Ejercicio 1 · Variables y tipos (1 minuto)
 
 ```python
-player_name = "Alex"      # str
+player_name = "German"      # str
 player_speed = 5          # int
 player_health = 87.5      # float
 is_alive = True           # bool
