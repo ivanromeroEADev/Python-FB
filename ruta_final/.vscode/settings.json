@@ -1,0 +1,30 @@
+{
+    // Perfil de clase: editor sin IA, sin autocompletado y sin pistas.
+    // Se aplica solo al abrir la carpeta ruta_final en VS Code.
+
+    // IA: Copilot, chat y sugerencias en linea
+    "chat.disableAIFeatures": true,
+    "github.copilot.enable": { "*": false },
+    "editor.inlineSuggest.enabled": false,
+
+    // Autocompletado
+    "editor.quickSuggestions": { "other": "off", "comments": "off", "strings": "off" },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.snippetSuggestions": "none",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabCompletion": "off",
+
+    // Pistas: firma de funciones, documentacion al pasar el mouse,
+    // subrayado de errores y bombillas de "arreglo rapido"
+    "editor.parameterHints.enabled": false,
+    "editor.hover.enabled": false,
+    "editor.renderValidationDecorations": "off",
+    "editor.lightbulb.enabled": "off",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+
+    // Letra grande para compartir pantalla
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 18
+}

@@ -21,7 +21,7 @@ player_health = 87.5      # float: numero con decimales
 is_alive = True           # bool: verdadero o falso
 
 print("\nEjercicio 1: variables y tipos")
-print(player_name)
+print(type(player_name))
 print(player_speed)
 print(player_health)
 print(is_alive)
@@ -68,25 +68,26 @@ print(tests_failed)
 print(pass_rate)
 
 # Predice el resultado de cada linea antes de quitarle el #:
-# print(pass_rate > 85)        # Tu respuesta: ____
-# print(pass_rate >= 85)       # Tu respuesta: ____
-# print(5 + 5)                 # Tu respuesta: ____
-# print("5" + "5")             # Tu respuesta: ____
-# print("5" == 5)              # Tu respuesta: ____
+print(pass_rate > 85)        # Tu respuesta:
+print(pass_rate >= 85)       # Tu respuesta:
+print(5 + 5)                 # Tu respuesta: ____
+print("5" + "5")             # Tu respuesta: ____
+print("5" == 5)              # Tu respuesta: ____ 1 = guarda un valor; == preguntan si dos valores son iguales
 
 
 # Ejercicio 4: tomar decisiones
 # La linea del if termina con dos puntos. Las instrucciones dentro del bloque
 # llevan cuatro espacios al inicio.
-crashes = 3
+crashes = 2
 
 print("\nEjercicio 4: tomar decisiones")
+
 if crashes == 0:
     print("No issues")
 elif crashes <= 2:
     print("Minor")
 else:
-    print("Critical")
+    print("Critical")       #
 
 # Antes de cambiar crashes, predice que mensaje saldra:
 #   Si crashes vale 0: ____
@@ -101,7 +102,8 @@ else:
 fps = 30
 
 print("\nEjercicio 5: encuentra el error")
-if fps > 30:
+
+if fps >= 30:
     print("PASS")
 else:
     print("FAIL")
@@ -117,7 +119,10 @@ actual = 7
 
 print("\nEjercicio 6: comparar valores")
 # Escribe tu respuesta en el if / else de abajo. Antes de ejecutar, predice que mensaje saldra:
-
+if  actual == expected:
+    print("PASS")
+else:
+    print("FAIL")
 
 # Reto, si te queda tiempo
 # a) Muestra ambos valores en el mensaje de error.

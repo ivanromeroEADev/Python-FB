@@ -6,7 +6,9 @@
 # REGLA: antes de ejecutar, predice. Escribe tu prediccion donde
 # veas ____ y solo despues quita el # del print para comprobar.
 
+
 print("Session 2 ready")
+
 
 
 # --- Ejercicio 1: listas -------------------------------------------
@@ -29,6 +31,7 @@ print(len(results))
 # --- Ejercicio 2: for ----------------------------------------------
 # for repite las lineas que estan debajo (con 4 espacios), una vez por
 # cada valor de la lista.
+# r = results = 0 = pass
 for r in results:
     print("Checking:", r)
 print("Done")
@@ -46,7 +49,7 @@ low = 0
 for fps in fps_samples:
     if fps < 30:
         low = low + 1
-
+#
 # Completa la tabla ANTES de ejecutar. Una fila por vuelta del loop:
 #
 #   vuelta   fps   fps < 30 ?   low al terminar la vuelta
@@ -77,7 +80,12 @@ print("Builds with crashes:", builds_with_crashes)
 
 # --- Ejercicio 5: escribelo tu, desde cero -------------------------
 test_results = ["pass", "fail", "pass", "pass", "fail", "pass"]
+results = 0
 
+for test in test_results:
+	if test == "pass":
+		results = results + 1
+print ("passed:" , results)
 # Escribe un loop que cuente cuantos "pass" hay en test_results.
 # Al final debe mostrar:   Passed: 4
 # Necesitas tres cosas: un contador que empieza en 0 (antes del loop),

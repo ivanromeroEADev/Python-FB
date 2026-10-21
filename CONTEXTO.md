@@ -145,6 +145,22 @@ valores límite, los logs y los assertions. El plan se ajustó a eso.
    Antes, confirmar que Nearpod está permitido con cuenta de la empresa.
 5. La sesión 1 no tiene `sesion1_presentacion.md`.
 
+## Ruta final (desde el 21 de octubre)
+
+El calendario se corrió: la sesión 2 se dio el 20 de octubre. Quedan 4 sesiones
+entre el 22 y el 30. Todo está en `ruta_final/`, y el plan en
+`ruta_final/PLAN.md`. Lo de `semana2` a `semana4` queda como banco de ejercicios.
+
+- **Más nivel** desde la sesión 3, y el mini-proyecto (`ruta_final/proyecto/skate_validator.py`)
+  avanza por hitos, uno por sesión, en lugar de hacerse entero en la sesión 6.
+- **Menos IA:** Iván vio que los participantes resolvían con IA. Ahora se
+  escribe en la pantalla del instructor (VS Code sin IA ni autocompletado, por
+  `ruta_final/.vscode/settings.json`) con control remoto por parejas,
+  predicciones de 60 segundos, reglas que decide el grupo, requisitos que
+  cambian en vivo y una defensa oral al final.
+- Hecho: guion, ejercicios y soluciones de la sesión 3 (22 oct) y el hito 1.
+  Las soluciones están probadas con Python 3.
+
 ## Cómo retomar
 
 Abrir una sesión de Claude en esta carpeta y escribir:
